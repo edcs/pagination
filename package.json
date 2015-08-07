@@ -1,0 +1,31 @@
+{
+  "name": "edcs-pagination",
+  "version": "1.0.0",
+  "description": "A tiny module for building a re-usable set of pagination links.",
+  "author": "Edward Coleridge Smith <e.coleridgesmith@edcs.me>",
+  "homepage": "http://ecs.io",
+  "main": "src/pagination.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edcs/pagination.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edcs/pagination/issues"
+  },
+  "keywords": [
+    "pagination",
+    "links"
+  ],
+  "analyze": true,
+  "license": "MIT",
+  "scripts": {
+    "compile": "webpack src/pagination.js pagination.min.js -p"
+  },
+  "dependencies": {
+    "edcs-url": "^1.0.0"
+  },
+  "devDependencies": {
+    "webpack": "1.7.2",
+    "handlebars-loader": "^1.1.0"
+  }
+}

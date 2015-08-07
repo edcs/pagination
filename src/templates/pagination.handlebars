@@ -1,0 +1,33 @@
+<div class="pagination">
+    <ul>
+        {{#notFirst}}
+            <li class="page-first">
+                <a href="{{ pages.first.href }}" data-page="{{ pages.first.page }}">&laquo;</a>
+            </li>
+            <li class="page-prev">
+                <a href="{{ pages.prev.href }}" data-page="{{ pages.prev.page }}">&lt;</a>
+            </li>
+        {{/notFirst}}
+        <li>
+            <ul>
+                {{#pages}}
+                    <li>
+                        {{#if current}}
+                            <a href="{{ href }}" class="current" data-page="{{ page }}">{{ page }}</a>
+                        {{else}}
+                            <a href="{{ href }}" data-page="{{ page }}">{{ page }}</a>
+                        {{/if}}
+                    </li>
+                {{/pages}}
+            </ul>
+        </li>
+        {{#notLast}}
+            <li class="page-next">
+                <a href="{{ pages.next.href }}" data-page="{{ pages.next.page }}">&gt;</a>
+            </li>
+            <li class="page-last">
+                <a href="{{ pages.last.href }}" data-page="{{ pages.last.page }}">&raquo;</a>
+            </li>
+        {{/notLast}}
+    </ul>
+</div>
